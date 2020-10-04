@@ -425,15 +425,25 @@ img {
 
 .client-lisi-tem {
   display: flex;
+  /*width: calc((100% - 30px * 5) / 6);*/
+}
+
+.client-link {
+  display: flex;
+  width: 170px;
   height: 90px;
   align-items: center;
   justify-content: center;
-  width: calc((100% - 30px * 5) / 6);
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.client-link {
+.client-link:hover .client-svg {
+  fill: var(--accent-color);
+}
+
+.client-link:hover {
+  border-color: var(--accent-color);
 }
 
 .client-svg {
@@ -446,6 +456,14 @@ img {
 .footer {
   padding: 60px 0;
   background-color: #2f303a;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.foter-left {
+  margin-right: 80px;
 }
 
 .logo-web-foother {
@@ -494,6 +512,57 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-icon {
+  display: block;
+  width: 206px;
+  height: 80px;
+  padding-top: 12px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-icon-list {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.footer-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-icon-link:hover .footer-svg,
+.footer-icon-link:focus .footer-svg {
+  fill: #ffffff;
 }
 /*===============end footer===============*/
 
@@ -551,6 +620,11 @@ img {
   margin: 15px;
 }
 
+.portfolio-list-item:hover {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-list-content {
   padding: 20px 20px;
 }
@@ -570,6 +644,7 @@ img {
   line-height: 30px;
   letter-spacing: 0.03em;
 }
+
 /*===============end section portfolio===============*/
 
 /*===============end portfolio===============*/
