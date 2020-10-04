@@ -240,24 +240,44 @@ img {
 }
 
 .advantages-list-item div {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
 
-.advantages-list-item div:nth-child(1)::before {
+.advantages-list-item:nth-child(1) div::before {
   content: "";
+  display: block;
   width: 70px;
   height: 70px;
   background-image: url(../images/section-advantages/antenna.svg);
 }
 
-.advantages-list-item:nth-child(2)::before {
+.advantages-list-item:nth-child(2) div::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
   background-image: url(../images/section-advantages/clock.svg);
+}
+
+.advantages-list-item:nth-child(3) div::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/section-advantages/diagram.svg);
+}
+
+.advantages-list-item:nth-child(4) div::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/section-advantages/astronaut.svg);
 }
 
 /*.advantages-list-item::before {
